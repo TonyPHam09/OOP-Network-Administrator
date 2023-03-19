@@ -29,9 +29,11 @@ public class main {
         }while(a<=0 || a>4);
         switch(a){
             case 1:{
-                PTxe contay = new xecontay();
+                PTxe = new xecontay();
                 System.out.println("Ban dang tim SP cho xe con tay!!!");
                 System.out.println("Hay nhap vao 1 trong nhung hang sau: ");
+                
+                //*Cập nhật danh sách*
                 arr.add("1.HONDA");
                 arr.add("2.YAMAHA");
                 arr.add("3.SUZUKI");
@@ -54,39 +56,40 @@ public class main {
 //                        System.out.println("4.DUCATI");
                     }else{
                         switch(Brand){
-                            case 1:{contay.setBrand(arr.set(0,"LEGEND"));break;}
-                            case 2:{contay.setBrand("YAMAHA");break;}
-                            case 3:{contay.setBrand("SUZUKI");break;}
-                            case 4:{contay.setBrand("DUCATI");break;}
+                            case 1:{PTxe.setBrand(arr.set(0,"LEGEND"));break;}
+                            case 2:{PTxe.setBrand("YAMAHA");break;}
+                            case 3:{PTxe.setBrand("SUZUKI");break;}
+                            case 4:{PTxe.setBrand("DUCATI");break;}
                         }
                     }
                 }while(Brand <= 0 || Brand > 4);
 
                 System.out.println("Hay nhap vao SP ban muon tim: ");
-                contay.setKind(input.nextLine());
-                contay.setKind(input.nextLine());
+                PTxe.setKind(input.nextLine());
+                PTxe.setKind(input.nextLine());
                 System.out.println("Hay nhap vao ma san pham:");
-                contay.setCode(input.nextLine());
+                PTxe.setCode(input.nextLine());
                 System.out.println("Hay nhap vao gia san pham: ");
-                contay.setPrice(input.nextDouble());
+                PTxe.setPrice(input.nextDouble());
                 System.out.println("-------INFO--------");
-                System.out.println(contay.toString());
-                contay.RangeOfVehicle();
-                contay.inputDay();
-                contay.outputDay();
-                contay.employee();
+                System.out.println(PTxe.toString());
+                PTxe.RangeOfVehicle();
+                PTxe.inputDay();
+                PTxe.outputDay();
+                PTxe.employee();
                 break;
             }
             case 2:{
                 PTxe = new xeso();
                 System.out.println("Ban dang tim SP cho xe so!!!");
                 System.out.println("Hay nhap vao 1 trong nhung hang sau: ");
+                
+                //*Cập nhật danh sách*
                 arr.add("1.HONDA");
                 arr.add("2.YAMAHA");
                 arr.add("3.SUZUKI");
                 arr.add("4.SYM");
                 arr.set(1, "2.KYMCO");
-                System.out.println(arr);
 //                System.out.println("1.HONDA");
 //                System.out.println("2.YAMAHA");
 //                System.out.println("3.SUZUKI");
@@ -130,6 +133,8 @@ public class main {
                 PTxe = new xetayga();
                 System.out.println("Ban dang tim SP cho xe tay ga!!!");
                 System.out.println("Hay nhap vao 1 trong nhung hang sau: ");
+                
+                //*Cập nhật danh sách*
                 arr.add("1.HONDA");
                 arr.add("2.YAMAHA");
                 arr.add("3.SYM");
@@ -139,7 +144,7 @@ public class main {
 //                System.out.println("1.HONDA");
 //                System.out.println("2.YAMAHA");
 //                System.out.println("3.SYM");
-//                System.out.println("4.PIAGGIO");
+//                System.out.println("4.PIAGO");
                 int Brand;
                 do{
                     Brand = input.nextInt();
@@ -155,7 +160,7 @@ public class main {
                             case 1:{PTxe.setBrand("HONDA");break;}
                             case 2:{PTxe.setBrand("YAMAHA");break;}
                             case 3:{PTxe.setBrand("SYM");break;}
-                            case 4:{PTxe.setBrand(arr.set(3,"PIAGGIO"));break;}
+                            case 4:{PTxe.setBrand("PIAGO");break;}
                         }
                     }
                 }while(Brand <= 0 || Brand > 4);
