@@ -160,7 +160,7 @@ public class main {
                             case 1:{PTxe.setBrand("HONDA");break;}
                             case 2:{PTxe.setBrand("YAMAHA");break;}
                             case 3:{PTxe.setBrand("SYM");break;}
-                            case 4:{PTxe.setBrand("PIAGO");break;}
+                            case 4:{PTxe.setBrand(arr.set(3, "PEUGEOT"));break;}
                         }
                     }
                 }while(Brand <= 0 || Brand > 4);
