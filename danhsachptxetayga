@@ -20,10 +20,10 @@ public class danhsachptxetayga {
             System.out.println(xetayga);
         }
     }
-    public int soluongpt() {
+    public int soluongpt() { //Lay so luong
     	return this.listPTxetayga.size();
     }
-    public void lamrongDanhsach() {
+    public void lamrongDanhsach() { //Lam rong
     	this.listPTxetayga.removeAll(listPTxetayga);
     }
 }
