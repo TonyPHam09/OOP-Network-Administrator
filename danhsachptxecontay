@@ -20,10 +20,10 @@ public class danhsachptxecontay {
             System.out.println(xecontay);
         }
     }
-    public int soluongpt() {
+    public int soluongpt() { //Lay so luong
     	return this.listPTxecontay.size();
     }
-    public void lamrongDanhsach() {
+    public void lamrongDanhsach() { /Lam rong
     	this.listPTxecontay.removeAll(listPTxecontay);
     }
 }
