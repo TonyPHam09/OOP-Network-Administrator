@@ -110,22 +110,23 @@ public class main {
                         	System.out.println("2. Danh sach xe so");
                         	System.out.println("3. Danh sach xe tay ga");
                 		}
+                		else {
+                			switch(quantity) {
+                        	case 1:{
+                        		System.out.println("So luong phu tung xe con tay: "+ dsxecontay.soluongpt());
+                        		break;                		
+                        	}
+                        	case 2:{
+                        		System.out.println("So luong phu tung xe so: "+ dsxeso.soluongpt());
+                        		break;
+                        	}
+                        	case 3:{
+                        		System.out.println("So luong phu tung xe tay ga: "+ dsxetayga.soluongpt());
+                        		break;
+                        	}
+                        	}
+                		}
                 	}while(quantity<1 || quantity>3);
-                	
-                	switch(quantity) {
-                	case 1:{
-                		System.out.println("So luong phu tung xe con tay: "+ dsxecontay.soluongpt());
-                		break;                		
-                	}
-                	case 2:{
-                		System.out.println("So luong phu tung xe so: "+ dsxeso.soluongpt());
-                		break;
-                	}
-                	case 3:{
-                		System.out.println("So luong phu tung xe tay ga: "+ dsxetayga.soluongpt());
-                		break;
-                	}
-                	}
                 	break;
                 }
                 
@@ -165,7 +166,7 @@ public class main {
                         	}
                         	}
                 		}
-                	}while(a<1 || a>3);
+                	}while(empty<1 || empty>3);
                     break;
                 }
                 // case 7:{
