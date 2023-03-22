@@ -94,13 +94,24 @@ public class main {
                     dsxetayga.addPT(xetayga);
                     break;
                 }
-                //4. Hien thi so luong
+                //4. So luong
                 case 4:{
+                	int quantity;
                 	System.out.println("Chon danh sach thong ke so luong cua loai xe: ");
                 	System.out.println("1. Danh sach xe con tay");
                 	System.out.println("2. Danh sach xe so");
                 	System.out.println("3. Danh sach xe tay ga");
-                	int quantity = input.nextInt();
+                	do {
+                		quantity = input.nextInt();
+                		if(quantity<1 || quantity>3) {
+                			System.out.println("Vui long nhap lai!!!");
+                			System.out.println("Chon danh sach thong ke so luong cua loai xe: ");
+                        	System.out.println("1. Danh sach xe con tay");
+                        	System.out.println("2. Danh sach xe so");
+                        	System.out.println("3. Danh sach xe tay ga");
+                		}
+                	}while(quantity<1 || quantity>3);
+                	
                 	switch(quantity) {
                 	case 1:{
                 		System.out.println("So luong phu tung xe con tay: "+ dsxecontay.soluongpt());
@@ -118,31 +129,43 @@ public class main {
                 	break;
                 }
                 
-                //5. làm rỗng danh sách xe máy
                 case 5:{
                 	dsxecontay.xuatthongtin();
                 	break;
                 }
+                //6. Làm rỗng danh sách xe máy
                 case 6:{
+                	int empty;
                 	System.out.println("Chon danh sach can lam rong: ");
                 	System.out.println("1.Danh sach xe con tay");
                 	System.out.println("2.Danh sach xe so");
                 	System.out.println("3.Danh sach xe tay ga");
-                	int empty = input.nextInt();
-                	switch(empty) {
-                	case 1:{
-                		dsxecontay.lamrongDanhsach();
-                		break;
-                	}
-                	case 2:{
-                		dsxeso.lamrongDanhsach();
-                		break;
-                	}
-                	case 3:{
-                		dsxetayga.lamrongDanhsach();
-                		break;
-                	}
-                	}
+                	do {
+                		empty = input.nextInt();
+                		if(empty<1 || empty>3) {
+                			System.out.println("Vui long nhap lai!!!");
+                			System.out.println("Chon danh sach can lam rong: ");
+                        	System.out.println("1.Danh sach xe con tay");
+                        	System.out.println("2.Danh sach xe so");
+                        	System.out.println("3.Danh sach xe tay ga");
+                		}
+                		else {
+                			switch(empty) {
+                        	case 1:{
+                        		dsxecontay.lamrongDanhsach();
+                        		break;
+                        	}
+                        	case 2:{
+                        		dsxeso.lamrongDanhsach();
+                        		break;
+                        	}
+                        	case 3:{
+                        		dsxetayga.lamrongDanhsach();
+                        		break;
+                        	}
+                        	}
+                		}
+                	}while(a<1 || a>3);
                     break;
                 }
                 // case 7:{
